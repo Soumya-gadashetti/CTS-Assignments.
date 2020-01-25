@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>{{message}} User</h1>
+  <h2>You are using {{version}} Version</h2>
+  <!-- <ol>
+    <li *ngFor="let topic of topics">
+    {{topic}}
+  </li>
+  </ol> -->
+  
+Enter the Topic Names:
+  <input type="text" placeholder="enter topic" #currentTopic>
+  <button type="button" (click)="addTopic(currentTopic.value)">ADD</button>
+  <button type="button" (click)="deleteTopic1(currentTopic.value)">Delete</button>
+  <button type="button" (click)="searchTopic(currentTopic.value)">Search</button>
+  <br><br>
+  <div>
+    <table align="center">
+      <thead>
+        <tr>
+          <td>Topic ID</td>
+          <td>Topic Name</td>
+          <td>Action</td>
+        </tr>
+      </thead>
+      <thead>
+        <tr *ngFor="let i=index;let topic of topics">
+          <td>{{i+1}}</td>
+          <td>{{topic}}</td>
+          <td>
+            <button type="button" (click)="deleteTopic(i)">Delete</button>
+          </td>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan=3>No of topic:{{topics.length}}
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+</html>

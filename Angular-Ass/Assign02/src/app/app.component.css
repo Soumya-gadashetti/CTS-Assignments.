@@ -1,0 +1,21 @@
+h1{
+    color:red;
+    text-align: center;
+}
+h2{
+    color:green;
+    text-align: center;
+}
+tr,td,thead,tfoot,table{
+    /* border-top-style:solid;
+    border-bottom-style: solid;
+    border-left-style: dotted;
+    border-right-style:dotted; */
+    border-style:groove;
+    padding:10px;
+    color:black;
+    align-content: center;
+}
+body{
+    background-color: grey;
+}
