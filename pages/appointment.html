@@ -1,0 +1,152 @@
+<form class="form-horizontal" action="form.js" onsubmit="formValidation()">
+  <fieldset>
+  
+  <!-- Form Name -->
+  <legend>Appointment Form</legend>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="fname">Name</label>  
+    
+    <input id="fname" name="fname" type="text" placeholder="ex.Soumya" class="form-control input-md required">
+    <span class="help-block">First</span>  
+    <label class="col-md-4 control-label" for="sname"></label>  
+      <input id="sname" name="sname" type="text" placeholder="ex.gadashetti" class="form-control input-md required">
+    <span class="help-block">Last</span>  
+    
+  </div>
+  <br>
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="age">Age</label>  
+   
+    <input id="age" name="age" type="text" placeholder="above 15 less than 50" class="form-control input-md required">
+     
+  <!-- Text input-->
+  
+    <label class="col-md-4 control-label" for="email">Email</label>  
+   
+    <input id="email" name="email" type="text" placeholder="ex:soumyagadashetti@gmail.com" class="form-control input-md required">
+      
+  
+  
+  <!-- Text input-->
+  
+    <label class="col-md-4 control-label" for="num">Contact Number</label>  
+    
+    <input id="num" name="num" type="text" placeholder="10 digit number" class="form-control input-md required">
+      
+    
+  </div>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-6 control-label" for="address">Address</label>  
+    <div class="col-md-6">
+    <input id="address" name="address" type="text" placeholder="street address" class="form-control input-md required">
+      
+    </div>
+  </div>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="city">City</label>  
+    <div class="col-md-4">
+    <input id="city" name="city" type="text" placeholder="ex.Bangalore" class="form-control input-md required">
+      
+    </div>
+  </div>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="state">State</label>  
+    <div class="col-md-4">
+    <input id="state" name="state" type="text" placeholder="ex.Karnataka" class="form-control input-md required">
+      
+    </div>
+  </div>
+  
+  <!-- Button Drop Down -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="country">Country</label>
+    <div class="col-md-4">
+      <div class="input-group">
+        <input id="country" name="country" class="form-control" placeholder="" type="text">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu pull-right">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Multiple Radios -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="preference">Trainee Preference</label>
+    <div class="col-md-4">
+    <div class="radio">
+      <label for="preference-0">
+        <input type="radio" name="preference" id="preference-0" value="male" checked="checked">
+        Male Trainee
+      </label>
+    </div>
+    <div class="radio">
+      <label for="preference-1">
+        <input type="radio" name="preference" id="preference-1" value="female">
+        Female Trainee
+      </label>
+    </div>
+    <div class="radio">
+      <label for="preference-2">
+        <input type="radio" name="preference" id="preference-2" value="no">
+        No Preference
+      </label>
+    </div>
+    <div class="radio">
+      <label for="preference-3">
+        <input type="radio" name="preference" id="preference-3" value="tname">
+    
+        Trainee Name
+  <input type="text" value="tnames">
+      </label>
+    </div>
+    <div class="radio">
+      <label for="preference-4">
+        <input type="radio" name="preference" id="preference-4" value="other">
+    
+        Others
+  <input type="text" value="oname">
+      </label>
+    </div>
+    </div>
+  </div>
+  
+  <!-- Multiple Radios (inline) -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="physical">Do you need Physical Therapist?</label>
+    <div class="col-md-4"> 
+      <label class="radio-inline" for="physical-0">
+        <input type="radio" name="physical" id="physical-0" value="yes" checked="checked">
+        Yes
+      </label> 
+      <label class="radio-inline" for="physical-1">
+        <input type="radio" name="physical" id="physical-1" value="no">
+        No
+      </label>
+    </div>
+  </div>
+  
+  <!-- Button -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="button">Submit Appointment</label>
+    <div class="col-md-4">
+      <button id="button" name="button" class="btn btn-primary">Appoint</button>
+    </div>
+  </div>
+    </form>
+  </fieldset>
+  </form>
