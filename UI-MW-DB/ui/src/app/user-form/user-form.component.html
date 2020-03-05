@@ -1,0 +1,16 @@
+<h1>{{isNew?"New ":"Edit "}} User Login</h1>
+<form (ngSubmit)="save()">
+    <div>
+        <label>User Name</label>
+        <input type="text" name="unm" [(ngModel)]="user.username"/>
+    </div>
+    <div>
+        <label>Password</label>
+        <input type="text" name="psw" [(ngModel)]="user.password"/>
+    </div>
+    <div>
+        
+        <button (click)="ngSubmit">save</button>
+    </div>
+
+</form>

@@ -1,0 +1,27 @@
+<h2>User List</h2>
+
+<a routerLink="addUser">New User</a>
+<p *ngIf="!user && !errMsg">Please wait its loading....</p>
+<p *ngIf="errMsg">{{errMsg}}</p>
+<table *ngIf="user">
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Password</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of user">
+            <td>{{e.id}}</td>
+            <td>{{e.username}}</td>
+            <td>{{e.password}}</td>
+            
+            <td> <a href="#" (click)="delete(e.id)">Delete</a>
+            <span> | </span>
+            <a routerLink="editUser/{{e.id}}">EDIT</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
